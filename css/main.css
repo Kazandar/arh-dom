@@ -1,0 +1,384 @@
+/* Общие стили */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  55% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Главная секция */
+
+header {
+  padding: 40px 40px 0 40px;
+  min-height: 100vh;
+  background: url("../images/background_header.jpeg") no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+header a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.header_main {
+  min-height: calc(100vh - 104px);
+  position: relative;
+  z-index: 1;
+}
+
+.header_main a:hover {
+  transition: all 300ms linear;
+  color: #7b7247;
+}
+
+.header_nav_menu ul {
+  display: flex;
+  font-size: 16px;
+}
+
+.header_nav_menu ul li {
+  margin-right: 30px;
+}
+
+.logo {
+  margin-top: -20px;
+  margin-right: 10%;
+  max-width: 100px;
+}
+
+.header_sub_menu {
+  display: none;
+  font-size: 20px;
+}
+
+.header_sub_menu > a {
+  display: block;
+  margin-top: 15px;
+}
+
+.header_sub_menu li {
+  margin-top: 10px;
+}
+
+.header_sub_menu li:first-child {
+  margin-top: 30px;
+}
+
+.header_sub_menu li:last-child {
+  margin-bottom: 10px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-size: 20px;
+  color: white;
+}
+
+.phone a:last-child {
+  margin-top: 10px;
+}
+
+.menu {
+  display: none;
+  width: 60px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.menu img:last-child {
+  display: none;
+}
+
+.header_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  max-width: 1200px;
+  margin: auto;
+  top: 30%;
+  right: 0;
+  left: 0;
+}
+
+.header_description h1 {
+  font-size: 54px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header_description p {
+  font-size: 24px;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.header_description a {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 60px;
+  background-color: #7b7247;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header_description a:hover {
+  transition: all 300ms linear;
+  background-color: hsl(50, 24%, 28%);
+  position: relative;
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  top: 95%;
+  left: 49%;
+  cursor: pointer;
+  animation: arrow 1.7s infinite ease;
+}
+
+/* Наши услуги */
+
+#our_services {
+  padding: 100px 0 180px;
+  background-color: #f5f5f5;
+}
+
+#our_services h2 {
+  font-size: 42px;
+  text-align: center;
+}
+
+#our_services h3 {
+  font-size: 30px;
+  padding: 30px 0;
+}
+
+#our_services img {
+  width: 90px;
+}
+
+.our_services_items {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our_services_items > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 33.3%;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+/* Технологии */
+#technology {
+  padding: 100px 50px;
+}
+
+#technology h2 {
+  font-size: 42px;
+  text-align: center;
+}
+
+.technology_items {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.technology_items h3 {
+  padding-top: 70px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.technology_items p {
+  margin-bottom: 20px;
+}
+
+.technology_items ol li {
+  margin-bottom: 20px;
+}
+
+.left_column {
+  flex-basis: 40%;
+}
+
+.right_column {
+  flex-basis: 40%;
+}
+
+/* Контакты */
+
+#contacts {
+  padding: 100px 0 40px;
+  background-color: #242424;
+}
+
+#contacts > h2 {
+  font-size: 42px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+#contacts p {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contacts p:last-child {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+#contacts a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/* Отображение контента для небольших мониторов */
+
+@media (max-width: 1199px) {
+  .header_main h1 {
+    font-size: 48px;
+  }
+
+  .header_description p {
+    font-size: 20px;
+  }
+}
+
+/* Отображение для маленьких мониторов и планшета */
+
+@media (max-width: 990px) {
+  .header_main h1 {
+    font-size: 36px;
+  }
+
+  .header_description p {
+    font-size: 20px;
+  }
+
+  .our_services_items > div {
+    flex-basis: 50%;
+  }
+}
+
+/* Отображение для телефона */
+
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  .header_description {
+    padding: 0 20px;
+  }
+  .header_main h1 {
+    font-size: 32px;
+  }
+
+  .header_description p {
+    font-size: 18px;
+  }
+  .header_title {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+  }
+  .header_nav_menu {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+    max-width: 80px;
+  }
+  .phone {
+    display: none;
+  }
+  .header_description a {
+    font-size: 14px;
+  }
+  .menu {
+    display: block;
+  }
+
+  .our_services_items {
+    padding: 0 20px;
+  }
+  .our_services_items > div {
+    margin-top: 50px;
+    flex-basis: 100%;
+  }
+  #technology {
+    padding: 100px 30px;
+  }
+  .technology_items {
+    flex-direction: column;
+  }
+}
+
+/* Отображение для среднего телефона */
+
+@media (max-width: 480px) {
+  .header_description a {
+    font-size: 12px;
+  }
+}
+
+/* Отображение для мини телефона */
+
+@media (max-width: 360px) {
+  .header_description {
+    top: 25%;
+  }
+  .header_description a {
+    font-size: 10px;
+  }
+}
