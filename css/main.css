@@ -272,7 +272,7 @@ header:after {
 
 #contacts p:last-child {
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 #contacts a {
@@ -306,6 +306,10 @@ header:after {
 
   .our_services_items > div {
     flex-basis: 50%;
+  }
+
+  .technology_items {
+    padding: 0 10px;
   }
 }
 
@@ -361,6 +365,26 @@ header:after {
   }
   .technology_items {
     flex-direction: column;
+  }
+
+  #contacts {
+    padding: 40px 0;
+  }
+
+  #contacts h2 {
+    font-size: 24px;
+  }
+
+  #contacts p {
+    font-size: 20px;
+  }
+
+  #contacts a {
+    font-size: 16px;
+  }
+
+  #contacts p:last-child {
+    font-size: 12px;
   }
 }
 
