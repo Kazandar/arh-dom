@@ -1,6 +1,12 @@
 const subMenuElem = $(".header_sub_menu");
 let isOpen = false;
 
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  console.log(window.innerHeight, vh);
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
+
 function scrollToPosition(position) {
   $("body,html").animate({ scrollTop: position }, 500);
 }
