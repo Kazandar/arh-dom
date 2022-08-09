@@ -1,7 +1,7 @@
 const header = $("header");
 const headerMain = $(".header_main");
 const subMenuElem = $(".header_sub_menu");
-const license = document.getElementsByClassName("license");
+const license = document.querySelector(".license");
 
 let isOpen = false;
 header.css({ minHeight: `${window.visualViewport.height}px` });
