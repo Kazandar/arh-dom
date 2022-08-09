@@ -1,10 +1,12 @@
 const header = $("header");
 const headerMain = $(".header_main");
 const subMenuElem = $(".header_sub_menu");
-let isOpen = false;
+const license = $(".license");
 
+let isOpen = false;
 header.css({ minHeight: `${window.visualViewport.height}px` });
 headerMain.css({ minHeight: `${window.visualViewport.height - 104}px` });
+license.text(`© Арх-дом, ${new Date().getFullYear()}`);
 
 function scrollToPosition(position) {
   $("body,html").animate({ scrollTop: position }, 500);
