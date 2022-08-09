@@ -6,7 +6,7 @@ const license = $(".license");
 let isOpen = false;
 header.css({ minHeight: `${window.visualViewport.height}px` });
 headerMain.css({ minHeight: `${window.visualViewport.height - 104}px` });
-license.text(`© Арх-дом, ${new Date().getFullYear()}`);
+license.text(`© Арх-дом, `);
 
 function scrollToPosition(position) {
   $("body,html").animate({ scrollTop: position }, 500);
