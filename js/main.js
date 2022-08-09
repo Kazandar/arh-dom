@@ -3,9 +3,9 @@ let isOpen = false;
 
 document.querySelector(
   "header"
-).style.minHeight = `${document.documentElement.clientHeight}px`;
+).style.minHeight = `${window.visualViewport.height}px`;
 
-console.log(document.documentElement.clientHeight);
+console.log(window.visualViewport.height);
 
 function scrollToPosition(position) {
   $("body,html").animate({ scrollTop: position }, 500);
