@@ -23,7 +23,7 @@
 
 header {
   padding: 40px 40px 0 40px;
-  min-height: 100vh;
+  height: 100vh;
   background: url("../images/background_header.jpeg") no-repeat;
   background-size: cover;
   color: white;

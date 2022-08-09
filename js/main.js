@@ -1,6 +1,8 @@
 const subMenuElem = $(".header_sub_menu");
 let isOpen = false;
 
+document.querySelector("header").style.height = window.innerHeight;
+
 function scrollToPosition(position) {
   $("body,html").animate({ scrollTop: position }, 500);
 }
