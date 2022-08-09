@@ -3,6 +3,8 @@ let isOpen = false;
 
 document.querySelector("header").style.height = window.innerHeight;
 
+console.log(`${window.outerHeight}px`);
+
 function scrollToPosition(position) {
   $("body,html").animate({ scrollTop: position }, 500);
 }
