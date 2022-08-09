@@ -3,14 +3,8 @@ const headerMain = $(".header_main");
 const subMenuElem = $(".header_sub_menu");
 let isOpen = false;
 
-// document.querySelector(
-//   "header"
-// ).style.minHeight = `${window.visualViewport.height}px`;
-
-window.addEventListener("resize", () => {
-  header.css({ minHeight: `${window.visualViewport.height}px` });
-  headerMain.css({ minHeight: `${window.visualViewport.height - 104}px` });
-});
+header.css({ minHeight: `${window.visualViewport.height}px` });
+headerMain.css({ minHeight: `${window.visualViewport.height - 104}px` });
 
 function scrollToPosition(position) {
   $("body,html").animate({ scrollTop: position }, 500);
