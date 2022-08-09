@@ -1,7 +1,7 @@
 const subMenuElem = $(".header_sub_menu");
 let isOpen = false;
 
-document.querySelector("header").style.height = window.innerHeight;
+document.querySelector("header").style.height = `${window.outerHeight}px`;
 
 console.log(`${window.outerHeight}px`);
 
