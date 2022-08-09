@@ -46,7 +46,7 @@ header:after {
 }
 
 .header_main {
-  min-height: calc(100% - 104px);
+  min-height: calc(100vh - 104px);
   position: relative;
   z-index: 1;
 }
