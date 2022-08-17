@@ -220,9 +220,39 @@ header:after {
 }
 
 .technology_items {
-  display: flex;
-  justify-content: space-evenly;
   font-size: 18px;
+  padding: 0 50px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.cltBoard {
+  max-width: 500px;
+  float: right;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.imgContainer img {
+  margin-top: 50px;
+}
+
+.imageContrainer2 {
+  text-align: center;
+}
+
+.brusLine {
+  margin-bottom: 50px;
+}
+
+.imageHeader {
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 .technology_items h3 {
@@ -239,14 +269,6 @@ header:after {
 
 .technology_items ol li {
   margin-bottom: 20px;
-}
-
-.left_column {
-  flex-basis: 40%;
-}
-
-.right_column {
-  flex-basis: 40%;
 }
 
 /* Контакты */
@@ -310,6 +332,12 @@ header:after {
 
   .technology_items {
     padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .cltBoard {
+    float: none;
+    max-width: 100%;
   }
 }
 
