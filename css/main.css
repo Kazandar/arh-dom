@@ -171,44 +171,6 @@ header:after {
   animation: arrow 1.7s infinite ease;
 }
 
-/* Наши услуги */
-
-#our_services {
-  padding: 100px 0 180px;
-  background-color: #f5f5f5;
-}
-
-#our_services h2 {
-  font-size: 42px;
-  text-align: center;
-}
-
-#our_services h3 {
-  font-size: 30px;
-  padding: 30px 0;
-}
-
-#our_services img {
-  width: 90px;
-}
-
-.our_services_items {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.our_services_items > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex-basis: 33.3%;
-  margin-top: 100px;
-  padding: 0 20px;
-}
-
 /* Технологии */
 #technology {
   padding: 100px 50px;
@@ -271,6 +233,44 @@ header:after {
   margin-bottom: 20px;
 }
 
+/* Наши услуги */
+
+#our_services {
+  padding: 100px 0 180px;
+  background-color: #f5f5f5;
+}
+
+#our_services h2 {
+  font-size: 42px;
+  text-align: center;
+}
+
+#our_services h3 {
+  font-size: 30px;
+  padding: 30px 0;
+}
+
+#our_services img {
+  width: 90px;
+}
+
+.our_services_items {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our_services_items > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 33.3%;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
 /* Контакты */
 
 #contacts {
@@ -326,10 +326,6 @@ header:after {
     font-size: 20px;
   }
 
-  .our_services_items > div {
-    flex-basis: 50%;
-  }
-
   .technology_items {
     padding: 0 10px;
     margin: 0 auto;
@@ -338,6 +334,10 @@ header:after {
   .cltBoard {
     float: none;
     max-width: 100%;
+  }
+
+  .our_services_items > div {
+    flex-basis: 50%;
   }
 }
 
@@ -381,18 +381,19 @@ header:after {
     display: block;
   }
 
+  #technology {
+    padding: 100px 30px;
+  }
+  .technology_items {
+    flex-direction: column;
+  }
+
   .our_services_items {
     padding: 0 20px;
   }
   .our_services_items > div {
     margin-top: 50px;
     flex-basis: 100%;
-  }
-  #technology {
-    padding: 100px 30px;
-  }
-  .technology_items {
-    flex-direction: column;
   }
 
   #contacts {

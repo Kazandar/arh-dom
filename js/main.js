@@ -31,7 +31,7 @@ function onMenuClickHandler() {
 }
 
 function onArrowClickHandler() {
-  const position = $("#our_services").offset().top;
+  const position = $("#technology").offset().top;
 
   scrollToPosition(position);
 }
